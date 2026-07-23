@@ -1,0 +1,60 @@
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css";
+
+@import "nativewind/theme";
+
+/* GoldBucks design tokens from Figma: https://www.figma.com/design/7nnQ084zQukMOEmCFIbm4E/GoldBucks */
+@theme {
+  /* ——— Colors: Brand Primary ——— */
+  --color-brand-primary: #c4862d;
+  --color-brand-primary-50: #fcf8f3;
+  --color-brand-primary-300: #e0b476;
+  --color-brand-primary-400: #d69e4d;
+
+  /* ——— Colors: Brand Secondary (Blue) ——— */
+  --color-brand-secondary: #0b0844;
+  --color-brand-secondary-50: #f6f6fe;
+  --color-brand-secondary-100: #bebbf7;
+  --color-brand-secondary-500: #0b0844;
+
+  /* ——— Colors: Brand Secondary (Red) ——— */
+  --color-brand-red: #bb0613;
+  --color-brand-red-50: #fff0f1;
+
+  /* ——— Colors: Neutral Grey ——— */
+  --color-neutral-50: #f7f7f8;
+  --color-neutral-100: #eeeef1;
+  --color-neutral-200: #d3d2da;
+  --color-neutral-300: #b7b7c3;
+  --color-neutral-400: #9c9bab;
+  --color-neutral-500: #807f94;
+  --color-neutral-600: #67667a;
+  --color-neutral-700: #504f5e;
+  --color-neutral-800: #383843;
+  --color-neutral-900: #212027;
+
+  /* ——— Colors: Misc ——— */
+  --color-neutral-muted: #868a90;
+  --color-border: #eeeef1;
+  --color-background: #ffffff;
+  --color-foreground: #000000;
+  --color-dark: #141b34;
+  --color-semantic-red: #dc2626;
+  --color-brand-ink: #2f3541;
+
+  /* ——— Spacing (Figma: XX-Small / X-Small / Small + layout) ——— */
+  --spacing-xx-small: 4px;
+  --spacing-x-small: 8px;
+  --spacing-small: 12px;
+  --spacing-medium: 16px;
+  --spacing-large: 20px;
+  --spacing-x-large: 24px;
+  --spacing-xx-large: 32px;
+  --spacing-screen: 20px;
+
+  /* ——— Radius (matches Figma spacing-linked radii) ——— */
+  --radius-xx-small: 4px;
+  --radius-x-small: 8px;
+  --radius-small: 12px;
+}
