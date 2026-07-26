@@ -58,4 +58,19 @@
   --radius-xx-small: 4px;
   --radius-x-small: 8px;
   --radius-small: 12px;
+
+  /* ——— Font Families (PostScript names; RN needs one file per weight) ——— */
+  --font-sans: "Satoshi-Regular";
+  --font-heading: "Satoshi-Bold";
+  --font-display: "Satoshi-Black";
+  --font-satoshi: "Satoshi-Regular";
+  --font-satoshi-light: "Satoshi-Light";
+  --font-satoshi-light-italic: "Satoshi-LightItalic";
+  --font-satoshi-italic: "Satoshi-Italic";
+  --font-satoshi-medium: "Satoshi-Medium";
+  --font-satoshi-medium-italic: "Satoshi-MediumItalic";
+  --font-satoshi-bold: "Satoshi-Bold";
+  --font-satoshi-bold-italic: "Satoshi-BoldItalic";
+  --font-satoshi-black: "Satoshi-Black";
+  --font-satoshi-black-italic: "Satoshi-BlackItalic";
 }
