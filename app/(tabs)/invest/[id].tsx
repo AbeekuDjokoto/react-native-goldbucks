@@ -2,13 +2,13 @@ import { useLocalSearchParams } from "expo-router";
 import React from "react";
 import { Text, View } from "react-native";
 
-const InterestDetail = () => {
-    const { id } = useLocalSearchParams();
+const InvestDetail = () => {
+  const { id } = useLocalSearchParams();
   return (
     <View>
-      <Text>InterestDetail {id}</Text>
+      <Text>InvestDetail {id}</Text>
     </View>
   );
 };
 
-export default InterestDetail;
+export default InvestDetail;
