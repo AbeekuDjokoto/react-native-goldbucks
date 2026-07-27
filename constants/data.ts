@@ -7,92 +7,179 @@ export const tabs: AppTab[] = [
   { name: "account", title: "Account", icon: icons.account },
 ];
 
-export const UPCOMING_SUBSCRIPTIONS: UpcomingSubscription[] = [
+export const HOME_USER: HomeUser = {
+  name: "Monica",
+  tagline: "Get closer your financial goals.",
+  avatarUri: "https://i.pravatar.cc/150?img=47",
+  hasNotifications: true,
+};
+
+export const TIER_UPGRADE: TierUpgradeBanner = {
+  title: "Upgrade Account Tier",
+  description: "Verify your home address to upgrade your account to Tier 3.",
+  ctaLabel: "Verify",
+};
+
+export const WALLET: WalletInfo = {
+  label: "Wallet Balance",
+  balance: 50000.9,
+  currencySymbol: "₦",
+  rateLabel: "15% per annum",
+  accountNumber: "234569034",
+  slideCount: 3,
+  activeSlide: 0,
+};
+
+export const QUICK_ACTIONS: QuickAction[] = [
+  { id: "fund", label: "Fund Wallet", icon: "fund" },
+  { id: "transfer", label: "Transfer", icon: "transfer" },
+  { id: "invest", label: "Invest", icon: "invest", href: "/(tabs)/invest" },
+];
+
+export const TOTAL_SAVINGS: TotalSavingsInfo = {
+  label: "Total Savings",
+  balance: 50000.9,
+  rateLabel: "Up to 18% per annum",
+};
+
+export const SAVINGS_PLANS: SavingsPlan[] = [
   {
-    id: "spotify",
-    icon: icons.spotify,
-    name: "Spotify",
-    price: 5.99,
-    currency: "USD",
-    daysLeft: 2,
+    id: "lock-funds",
+    title: "Lock Funds",
+    description: "Lock your funds to prevent unnecessary spending",
+    kind: "lock",
+    ctaLabel: "Get started",
   },
   {
-    id: "notion",
-    icon: icons.notion,
-    name: "Notion",
-    price: 12.0,
-    currency: "USD",
-    daysLeft: 4,
-  },
-  {
-    id: "figma",
-    icon: icons.figma,
-    name: "Figma",
-    price: 15.0,
-    currency: "USD",
-    daysLeft: 6,
+    id: "target-savings",
+    title: "Target Savings",
+    description: "Save towards a target for specific purposes",
+    kind: "target",
+    amount: 50000,
   },
 ];
 
-export const HOME_SUBSCRIPTIONS: Subscription[] = [
+export const SAVINGS_SCREEN_PLANS: SavingsPlan[] = [
   {
-    id: "adobe-creative-cloud",
-    icon: icons.adobe,
-    name: "Adobe Creative Cloud",
-    plan: "Teams Plan",
-    category: "Design",
-    paymentMethod: "Visa ending in 8530",
-    status: "active",
-    startDate: "2025-03-20T10:00:00.000Z",
-    price: 77.49,
-    currency: "USD",
-    billing: "Monthly",
-    renewalDate: "2026-03-20T10:00:00.000Z",
-    color: "#f5c542",
+    id: "target-savings",
+    title: "Target Savings",
+    description: "Save towards a goal for specific purposes",
+    kind: "target",
+    rateLabel: "Up to 15% per annum",
+    ctaLabel: "Get started",
   },
   {
-    id: "github-pro",
-    icon: icons.github,
-    name: "GitHub Pro",
-    plan: "Developer",
-    category: "Developer Tools",
-    paymentMethod: "Mastercard ending in 2408",
-    status: "active",
-    startDate: "2024-11-24T10:00:00.000Z",
-    price: 9.99,
-    currency: "USD",
-    billing: "Monthly",
-    renewalDate: "2026-03-24T10:00:00.000Z",
-    color: "#e8def8",
+    id: "group-savings",
+    title: "Group Savings",
+    description: "Join a savings plan with other focused individuals",
+    kind: "group",
+    rateLabel: "Up to 15% per annum",
+    amount: 350000.9,
   },
   {
-    id: "claude-pro",
-    icon: icons.claude,
-    name: "Claude Pro",
-    plan: "Pro Plan",
-    category: "AI Tools",
-    paymentMethod: "Amex ending in 1010",
-    status: "paused",
-    startDate: "2025-06-27T10:00:00.000Z",
-    price: 20.0,
-    currency: "USD",
-    billing: "Monthly",
-    renewalDate: "2026-03-27T10:00:00.000Z",
-    color: "#b8d4e3",
+    id: "fixed-savings",
+    title: "Fixed Savings",
+    description:
+      "Continuous daily, weekly or monthly savings with notice periods",
+    kind: "fixed",
+    rateLabel: "Up to 15% per annum",
+    ctaLabel: "Get started",
   },
   {
-    id: "canva-pro",
-    icon: icons.canva,
-    name: "Canva Pro",
-    plan: "Yearly Access",
-    category: "Design",
-    paymentMethod: "Visa ending in 7784",
-    status: "cancelled",
-    startDate: "2024-04-02T10:00:00.000Z",
-    price: 119.99,
-    currency: "USD",
-    billing: "Yearly",
-    renewalDate: "2026-04-02T10:00:00.000Z",
-    color: "#b8e8d0",
+    id: "lock-funds",
+    title: "Lock Funds",
+    description: "Lock your funds to prevent unnecessary spending",
+    kind: "lock",
+    rateLabel: "Up to 15% per annum",
+    amount: 120000.95,
+  },
+];
+
+export const INVESTMENT_PLANS: InvestmentPlan[] = [
+  {
+    id: "frontier-note",
+    title: "Bucksfield Frontier Note",
+    description: "High returns, fixed duration, diversified.",
+    rateLabel: "Up to 18% per annum",
+    kind: "frontier",
+    ctaLabel: "Start Investing",
+  },
+  {
+    id: "money-market",
+    title: "Bucksfield Money Market Plan",
+    description: "Stable returns, easy access. Grow your short-term funds.",
+    rateLabel: "Up to 18% per annum",
+    kind: "money-market",
+    amount: 50000,
+  },
+];
+
+
+export const TRANSACTION_GROUPS: TransactionGroup[] = [
+  {
+    id: "today",
+    dateLabel: "Today",
+    items: [
+      {
+        id: "tx-1",
+        title: "Interest payment",
+        datetime: "21 January, 2024 | 09:15 AM",
+        amount: 100000,
+        status: "successful",
+        icon: "interest",
+      },
+      {
+        id: "tx-2",
+        title: "Wallet top-up",
+        datetime: "21 January, 2024 | 09:15 AM",
+        amount: 100000,
+        status: "failed",
+        icon: "topup",
+      },
+      {
+        id: "tx-3",
+        title: "Wallet top-up",
+        datetime: "21 January, 2024 | 09:15 AM",
+        amount: 100000,
+        status: "successful",
+        icon: "topup",
+      },
+    ],
+  },
+  {
+    id: "feb-2",
+    dateLabel: "February 2, 2025",
+    items: [
+      {
+        id: "tx-4",
+        title: "Interest payment",
+        datetime: "2 February, 2025 | 11:00 AM",
+        amount: 100000,
+        status: "successful",
+        icon: "interest",
+      },
+      {
+        id: "tx-5",
+        title: "Wallet top-up",
+        datetime: "2 February, 2025 | 11:00 AM",
+        amount: 100000,
+        status: "successful",
+        icon: "topup",
+      },
+    ],
+  },
+  {
+    id: "jan-29",
+    dateLabel: "January 29, 2025",
+    items: [
+      {
+        id: "tx-6",
+        title: "Interest payment",
+        datetime: "29 January, 2025 | 11:00 AM",
+        amount: 100000,
+        status: "successful",
+        icon: "interest",
+      },
+    ],
   },
 ];

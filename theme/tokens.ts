@@ -13,6 +13,8 @@ export const colors = {
       50: "#fcf8f3",
       300: "#e0b476",
       400: "#d69e4d",
+      /** Warm cream used at top of Home gradient */
+      500: "#fbf6ee",
     },
     secondary: {
       main: "#0b0844",
@@ -40,11 +42,14 @@ export const colors = {
     muted: "#868a90",
   },
   border: "#eeeef1",
+  /** Cool light grey used on secondary surfaces; Home sheet is white. */
+  page: "#f9f9f9",
   background: "#ffffff",
   foreground: "#000000",
   dark: "#141b34",
   semantic: {
     red: "#dc2626",
+    green: "#2d6a4f",
   },
 } as const;
 
@@ -57,6 +62,8 @@ export const spacing = {
   large: 20,
   xLarge: 24,
   xxLarge: 32,
+  /** Gap from Quick Actions to Savings Plans header on Home */
+  sheetGap: 28,
   /** Horizontal page padding used across screens (`px-[20px]`). */
   screen: 20,
 } as const;
@@ -65,6 +72,9 @@ export const radius = {
   xxSmall: 4,
   xSmall: 8,
   small: 12,
+  medium: 16,
+  /** Home white sheet top corners */
+  sheet: 32,
 } as const;
 
 export const theme = {

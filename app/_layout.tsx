@@ -1,10 +1,15 @@
 import "@/global.css";
+import { AuthGate } from "@/components/auth/AuthGate";
+import { useAuthHydration } from "@/hooks/use-auth-hydration";
 import { useFonts } from "expo-font";
-import { SplashScreen, Stack } from "expo-router";
+import { SplashScreen } from "expo-router";
 import { useEffect } from "react";
 
+SplashScreen.preventAutoHideAsync();
+
 export default function RootLayout() {
-  const [fontsLoaded] = useFonts({
+  const hydrated = useAuthHydration();
+  const [fontsLoaded, fontError] = useFonts({
     "Satoshi-Light": require("@/assets/fonts/Satoshi-Light.otf"),
     "Satoshi-LightItalic": require("@/assets/fonts/Satoshi-LightItalic.otf"),
     "Satoshi-Regular": require("@/assets/fonts/Satoshi-Regular.otf"),
@@ -18,12 +23,12 @@ export default function RootLayout() {
   });
 
   useEffect(() => {
-    if (fontsLoaded) {
+    if ((fontsLoaded || fontError) && hydrated) {
       SplashScreen.hideAsync();
     }
-  }, [fontsLoaded]);
+  }, [fontsLoaded, fontError, hydrated]);
 
-  if (!fontsLoaded) return null;
+  if ((!fontsLoaded && !fontError) || !hydrated) return null;
 
-  return <Stack screenOptions={{ headerShown: false }} />;
+  return <AuthGate />;
 }

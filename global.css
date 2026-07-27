@@ -38,10 +38,13 @@
   /* ——— Colors: Misc ——— */
   --color-neutral-muted: #868a90;
   --color-border: #eeeef1;
+  /* Cool light grey page canvas (Home screenshot ~#f9f9f9), not cream */
+  --color-page: #f9f9f9;
   --color-background: #ffffff;
   --color-foreground: #000000;
   --color-dark: #141b34;
   --color-semantic-red: #dc2626;
+  --color-semantic-green: #2d6a4f;
   --color-brand-ink: #2f3541;
 
   /* ——— Spacing (Figma: XX-Small / X-Small / Small + layout) ——— */
