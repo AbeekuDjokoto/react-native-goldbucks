@@ -11,7 +11,7 @@
     "lint": "expo lint",
     "typecheck": "tsc --noEmit",
     "test": "jest --ci",
-    "verify": "npm run lint && npm run typecheck"
+    "verify": "npm run lint && npm run typecheck && npm test"
   },
   "dependencies": {
     "@expo/vector-icons": "^15.0.3",
