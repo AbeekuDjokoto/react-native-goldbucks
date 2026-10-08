@@ -11,6 +11,7 @@
   --color-brand-primary-50: #fcf8f3;
   --color-brand-primary-300: #e0b476;
   --color-brand-primary-400: #d69e4d;
+  --color-brand-primary-500: #fbf6ee;
 
   /* ——— Colors: Brand Secondary (Blue) ——— */
   --color-brand-secondary: #0b0844;
@@ -37,10 +38,13 @@
   /* ——— Colors: Misc ——— */
   --color-neutral-muted: #868a90;
   --color-border: #eeeef1;
+  /* Cool light grey page canvas (Home screenshot ~#f9f9f9), not cream */
+  --color-page: #f9f9f9;
   --color-background: #ffffff;
   --color-foreground: #000000;
   --color-dark: #141b34;
   --color-semantic-red: #dc2626;
+  --color-semantic-green: #2d6a4f;
   --color-brand-ink: #2f3541;
 
   /* ——— Spacing (Figma: XX-Small / X-Small / Small + layout) ——— */
@@ -57,4 +61,19 @@
   --radius-xx-small: 4px;
   --radius-x-small: 8px;
   --radius-small: 12px;
+
+  /* ——— Font Families (PostScript names; RN needs one file per weight) ——— */
+  --font-sans: "Satoshi-Regular";
+  --font-heading: "Satoshi-Bold";
+  --font-display: "Satoshi-Black";
+  --font-satoshi: "Satoshi-Regular";
+  --font-satoshi-light: "Satoshi-Light";
+  --font-satoshi-light-italic: "Satoshi-LightItalic";
+  --font-satoshi-italic: "Satoshi-Italic";
+  --font-satoshi-medium: "Satoshi-Medium";
+  --font-satoshi-medium-italic: "Satoshi-MediumItalic";
+  --font-satoshi-bold: "Satoshi-Bold";
+  --font-satoshi-bold-italic: "Satoshi-BoldItalic";
+  --font-satoshi-black: "Satoshi-Black";
+  --font-satoshi-black-italic: "Satoshi-BlackItalic";
 }
